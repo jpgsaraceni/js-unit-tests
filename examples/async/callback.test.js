@@ -2,7 +2,7 @@ import md5CallbackFunc from "./callback.js";
 import { expect } from "chai";
 import errors from "./errors.js";
 
-describe('#md5CallbackFunc()', () => {
+describe('async/callback.js', () => {
     context('with string argument', () => {
         it('should compute MD5 hash', (done) => { // done (convention name) is used to test functions with callbacks
             md5CallbackFunc('Something to hash', (err, hash) => { // tested function callback

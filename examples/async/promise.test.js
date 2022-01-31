@@ -2,7 +2,7 @@ import md5Promise from './promise.js'
 import { expect } from 'chai'
 import errors from './errors.js'
 
-describe('#promise.js', () => {
+describe('#async/promise.js', () => {
     context('with string argument', () => {
         it('should compute MD5 hash', () => { // promises don't need done()
             // when you call a promise in a test, mocha understands it is async

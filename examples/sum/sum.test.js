@@ -2,7 +2,7 @@ import sum from './sum.js'
 import { expect } from 'chai'
 import errors from './errors.js'
 
-describe('#sum()', () => {
+describe('#sum/sum.js', () => {
     context('without arguments', () => {
         it('should return 0', () => {
             expect(sum()).to.equal(0)
