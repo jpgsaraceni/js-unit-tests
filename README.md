@@ -18,6 +18,10 @@ in my `package.json`, to just run `npm test` and test all files. Note that you d
 
 **You may need to install mocha globally (`npm i --global mocha`) to run the Mocha CLI**
 
+### Arrow functions
+
+Mocha [disourages using arrow functions](https://mochajs.org/#arrow-functions) because they bind `this` to the lexical context, not the Mocha context, and Mocha likes to use `this`.
+
 ## Code coverage with c8
 
 [c8](https://github.com/bcoe/c8/) natively supports ESM. Install globally (`npm i c8 -g`). Add to npm scripts:
