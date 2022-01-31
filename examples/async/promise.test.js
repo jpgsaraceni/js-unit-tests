@@ -16,6 +16,15 @@ describe('#async/promise.js', () => {
         })
     })
 
+    // the following is a redundant test case for showing how to use
+    // async/await instead of promise for assertion
+    context('async/await test with string argument', () => {
+        it('should compute md5 hash', async () => {
+            const hash = await md5Promise('something to hash')
+            expect(hash).to.be.a('string').that.matches(/^[a-f0-9]{32}$/);
+        })
+    })
+
     context('with non-string argument', () => {
         it('should throw an error', () => {
             md5Promise(123)
