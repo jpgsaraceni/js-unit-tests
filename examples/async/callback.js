@@ -12,7 +12,6 @@ export default (string, callback) => {
         withCallback && callback(null, hash);
     } catch (e) {
         if (withCallback) {
-            console.log(e)
             callback(errors.hashFail)
         }
         else throw e;
