@@ -2,7 +2,9 @@
 
 Study repo for unit tests in JavaScript using the Mocha and Chai framework. I chose Mocha because it supports ESM (Jest supports only experimentally), and Chai because the [tutorial](https://blog.logrocket.com/a-quick-and-complete-guide-to-mocha-testing-d0e0ea09f09d/#ismochajsabddtool) I followed uses Chai for assertions.
 
-The `/examples` directory contains examples from the said tutorial, with some (mostly) minor improvements and usage comments.
+The `/examples` directory contains examples from the said tutorial (subdirectories `async` and `sum`), with some (mostly) minor improvements and usage comments.
+
+The subdirectory `controller` contains code from [this digital ocean tutorial](https://www.digitalocean.com/community/tutorials/how-to-test-nodejs-apps-using-mocha-chai-and-sinonjs), which uses [Sinon](https://sinonjs.org/) to easily create and assert spies, stubs and mocks.
 
 ## About running tests with Mocha
 
